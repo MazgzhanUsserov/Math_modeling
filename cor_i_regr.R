@@ -107,7 +107,7 @@ vars
 formula = as.formula(paste("co2_flux~", paste(vars,collapse = "+"), sep=""))
 formula
 
-##Собственно линейная модель
+##линейная модель
 my.model = lm(co2_flux ~ LE + rand_err_LE  + h2o_flux + rand_err_h2o_flux + 
                 un_LE + un_co2_flux + un_h2o_flux + h2o_var + w_div_co2_cov, 
               data = teaching_data_unq)
